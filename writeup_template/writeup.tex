@@ -1,0 +1,80 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+\usepackage{writeup_style}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%---------------------------------------------------
+% Title, authors and addresses
+    \title{\uppercase{Writeup template \\ Subtitle}}
+\author{Victoria B. Stephens\\
+        Created: March 12, 2020 \\  
+        Last updated: \today}
+
+\maketitle
+
+%---------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Background}
+\label{sec:section_label_1}
+
+Words go here. Here's an equation:
+\begin{equation}
+    f_l^{(x,y)} \equiv = \sum_{i=1}^{\infty} \sum_{j=1}^{\infty} (m_i + m_j)^l m_i^x m_j^y (m_i^{1/3} + m_j^{1/3})^2 m_i^{-1/2}
+    m_j^{-1/2} N_i N_j.
+\end{equation}
+
+Reference things like this \cite{Leung_1991}. Make code blocks in figures like in Figure \ref{odt_input}.
+
+\begin{figure}
+\begin{verbatim}
+params:
+    LisFlmlt:      true           #  true to run a flamelet simulation
+    seed:          -21            #  random number generator seed 
+    tEnd:          0.01           #  ending time of realization (=100 d )
+    domainLength:  1.0            #  length of domain  (=150 d)
+    ngrd0:         1000           #  initial grid points
+    chemMechFile:  c2h4red.xml    #  name of chemical mechanism file
+\end{verbatim}
+    \caption{Here's a caption for this figure}                                                                             
+\label{odt_input}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Results}
+\label{sec:section_label_2}
+
+Figure template is here, too. Words here. Here is an example of a bulleted list of breakfast foods:
+\begin{itemize}
+    \item waffles
+    \item pancakes
+    \item eggs
+\end{itemize}
+
+\subsection{Subsection title}
+\label{sub:subsection_label}
+
+Some more words.
+%\begin{figure}
+%\begin{center}
+%	\includegraphics[scale=0.7]{M1_vs_mixf_various_chi}
+%   \caption{Figure caption}
+%	\label{M1_vs_mixf}
+%\end{center}
+%\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Uncomment these to include a bibliography. 
+
+\bibliographystyle{asmems4}
+\bibliography{refs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

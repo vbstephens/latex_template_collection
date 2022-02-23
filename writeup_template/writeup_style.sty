@@ -1,0 +1,55 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath}                    % math tools
+\usepackage{amssymb}                    % useful math symbols
+\usepackage[explicit]{titlesec}         % section formatting
+\usepackage{titling}                    % title formatting
+\usepackage[margin=1.0in]{geometry}     % easy margin change
+\usepackage{graphicx}                   % Required for including pictures
+\usepackage{float}                      % Additional float option for figures
+\usepackage{wrapfig}                    % Allows in-line images
+\usepackage{mathtools}                  % Lets us use math stuff
+\usepackage{amsmath}                    % More math stuff
+\usepackage[T1]{fontenc}                % Required for accented characters
+\usepackage{enumitem}                   % change line spacing in lists
+\usepackage{breqn}                      % break long equations onto two lines
+\usepackage[hidelinks]{hyperref}        % hyperlink document parts
+\usepackage{chemfig}                    % chemistry figures
+\usepackage{listings}                   % good-looking code blocks
+\usepackage{rotating}                   % rotated tables
+\usepackage{caption}                    % caption formatting
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Formatting
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Sections -----------------------------------------------------------
+\titleformat{\section}      [block]{\normalfont\sffamily\bfseries}{{\thesection}.}{1em}{\MakeUppercase{#1}}
+\titleformat{\subsection}   [block]{\normalfont\small\sffamily\bfseries}{{\thesubsection}.}{1em}{\MakeUppercase{#1}}
+\titleformat{\subsubsection}[block]{\normalfont\small\sffamily\bfseries}{{\thesubsubsection}.}{1em}{\MakeUppercase{#1}}
+
+\newcommand{\sectionspace}{\vspace{8pt}} % Defines a command to add a set amount of space after sections and subsections
+
+% Title --------------------------------------------------------------
+\pretitle{\begin{center}\large\sffamily\bfseries}
+\posttitle{\par\end{center}}
+\preauthor{\begin{center}}
+\postauthor{\end{center}}
+\predate{\begin{center}}
+    \date{}
+\postdate{\par\end{center}}
+
+% Columns -----------------------------------------------------------
+\setlength{\columnsep}{0.3in}           % change column separation width
+
+% Lists --------------------------------------------------------------
+\setlist{noitemsep}                     % no separation between items in a list
+
+% Text ---------------------------------------------------------------
+\def\code#1{\texttt{#1}}                % "code" formatted text using \code{} command
+
+% Tables/figures -----------------------------------------------------
+\captionsetup[table]{skip=8pt}          % puts space between table and caption
+\def\arraystretch{1.2}                  % table cell padding; default = 1.0
